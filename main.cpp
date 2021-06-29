@@ -7,7 +7,7 @@ bool correct_left(std::string before) {
 
     int coincidence = 0;
     for (int i = 0; i < before.length(); i++) {
-        if (before[i] >= 48 && before[i] <= 57 || before[i] >= 97 && before[i] <= 122) {
+        if (before[i] >= '0' && before[i] <= '9' || before[i] >= 'a' && before[i] <= 'z') {
 
         } else {
             if (i == before.length()-1 || i == 0) {
@@ -37,7 +37,7 @@ bool correct_right(std::string after) {
 
     int coincidence = 0;
     for (int i = 0; i < after.length(); i++) {
-        if (after[i] >= 48 && after[i] <= 57 || after[i] >= 97 && after[i] <= 122) {
+        if (after[i] >= '0' && after[i] <= '9' || after[i] >= 'a' && after[i] <= 'z') {
 
         } else {
             if (i == after.length()-1 || i == 0) {
